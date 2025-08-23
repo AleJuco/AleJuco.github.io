@@ -5,6 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Page</title>
   <link rel="stylesheet" href="styles.css" />
+
+  <style> /*general styling*/
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .single-column {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .two-column {
+      display: flex;
+      justify-content: space-between;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .two-column img {
+      width: 200px;
+      border-radius: 8px;
+    }
+
+    .two-column .text {
+      flex: 1;              /* Take up remaining space */
+    }
+  </style>
+
 </head>
 <body>
 
@@ -20,18 +58,22 @@
 
   
 
-  <main>
-    <h1>Who Am I?</h1>
-    <p><h3>Name: </h3>Alejandro Imperial</p>
-    <p> 
-      I am an incoming second year IGEN student at the University of British Columbia, aiming for a career in mechatronics and machine learning.
-    </p>
-    <h3>Why this website?</h3>
-    <p>
-      I created this website as a means of logging all my contributions and progress towards my career. I used github pages to host this website and it is linked to a repository on my home pc, from which I use VS studio to code in HTML
-    </p>
-
-  </main>
+    <!-- SINGLE COLUMN -->
+  <div class="single-column">
+    <h1>Welcome to My Page</h1>
+    <p>This is the introduction in a single column layout. 
+       Everything is centered and stacked vertically.</p>
+  </div>
+  
+  <!-- DOUBLE COLUMN -->
+  <div class="two-column">
+    <img src="https://placekitten.com/200/200" alt="Cute kitten">
+    <div class="text">
+      <h2>About Me</h2>
+      <p>Now we’ve switched to a two-column layout. 
+         The picture is on one side, and the text is on the other.</p>
+    </div>
+  </div>
 
 
   <footer>
