@@ -5,6 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Page</title>
   <link rel="stylesheet" href="styles.css" />
+
+    <style> /*general styling*/
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .single-column {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .two-column {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .two-column img {
+      width: 200px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .two-column .text {
+      flex: 1;              /* Take up remaining space */
+    }
+  </style>
 </head>
 <body>
   
@@ -14,20 +53,18 @@
     <a href="contact.html">Contact</a>
   </nav>
   
-  <header>
-    <h1>Portfolio Page</h1>
-  </header>
+  <div class="single-column">
+    <h3> Here are a collection of projects and past achievements thus far into my career</h3>
 
+  </div>
   
-
-  <main>
-    <h1></h1>
-    <div class="single-column">
-      <h2>Awards, Achievements, and Skills</h2>
-      <p>List your awards, achievements, and skills here.</p>
-
-  </main>
-  
-
+  <div class="two-column">
+    <img src="images/Screenshot 2025-08-23 111650.png">
+    <div class="texy">
+      <p>Hand sanitization station detection. This device, along with a clone of it, detects people entering a hospital operating room and those who sanitize their hands within the room. The data is later correlated to determine the rate at which doctors actually sanitize their hands</p>
+      <p>Here is the device in action at the Vancouver Childrens Hospital</p>
+    </div>
+    
+  </div>
 </body>
 </html>
