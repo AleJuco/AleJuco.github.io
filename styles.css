@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 70px;
     background-color: #ffffff;
   }
   
@@ -42,7 +42,7 @@ body {
     box-sizing: border-box;
     background: #f4f4f4;
     text-align: center;
-    margin: 0;
+    margin-top: 0;
     border-radius: 8px;
   }
   
@@ -79,10 +79,11 @@ body {
   }
   
   .single-column {
-    background: #fff;
+    max-width: 700px;
+    margin: 40px auto 0 auto;
     padding: 32px 16px;
-    margin: 0;
     border-radius: 8px;
+    background: #fff;
   }
   
   html {
