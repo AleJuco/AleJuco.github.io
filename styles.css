@@ -7,18 +7,17 @@ body {
   
   nav {
     background-color: #0077cc;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
   }
   
   nav a {
-    color: rgb(0, 0, 0);
-    margin: 0 50px;
+    color: #000;
+    margin: 0 32px;
     text-decoration: none;
-    font-size: 48px;
+    font-size: 1.5rem;
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
-    font-style: normal;
   }
   
   main {
@@ -30,7 +29,6 @@ body {
     color: white;
     text-align: center;
     padding: 1rem;
-    bottom: 0;
     width: 100%;
   }
   
@@ -39,10 +37,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px 0 40px 0;
+    padding: 40px 0;
     width: 100%;
     box-sizing: border-box;
     background: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    border-radius: 8px;
   }
   
   .about-image-container {
@@ -50,6 +51,38 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+  }
+  
+  .about-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #000;
+    margin-bottom: 20px;
+  }
+  
+  .about-title {
+    font-size: 2.5em;
+    font-family: "Archivo Black", sans-serif;
+    color: #333;
+    margin: 40px 0 10px 0;
+  }
+  
+  .highlight {
+    color: #0077cc;
+    font-weight: bold;
+  }
+  
+  .emoji {
+    font-size: 1.2em;
+  }
+  
+  .single-column {
+    background: #fff;
+    padding: 32px 16px;
+    margin: 0;
+    border-radius: 8px;
   }
   
   html {

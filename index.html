@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-
-  <style> /*general styling*/
+  <style>
+    /*general styling*/
 
     /* About Section Specific Styles */
     .about-section {
       text-align: center;
       background-color: #fff;
-      margin: 0 0;
+      margin: 0;
       border-radius: 8px;
-
-    }
-
-    .about-image-container {
-      margin-bottom: 20px;
+      padding: 40px 0;
     }
 
     .about-image {
@@ -29,16 +25,15 @@
       height: 250px;
       border-radius: 50%;
       object-fit: cover;
-      border: 5px solid #000000;
+      border: 5px solid #000;
+      margin-bottom: 20px;
     }
 
     .about-title {
-      font-size: 48px;
+      font-size: 2.5em;
       font-family: "Archivo Black", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      margin: 100px 300px;
       color: #333;
+      margin: 40px 0 10px 0;
     }
 
     .highlight {
@@ -49,25 +44,33 @@
     .emoji {
       font-size: 1.2em;
     }
-  </style>
 
+    .single-column {
+      background: #fff;
+      padding: 32px 16px;
+      margin: 0;
+      border-radius: 8px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
-    
   <nav>
     <a href="#About">About</a>
     <a href="#Projects">Projects</a>
     <a href="#Contact">Contact</a>
   </nav>
- 
+
   <!-- About Section with Image -->
   <div class="about-section" id="About">
-    <div class="about-image-container">
-      <img src="images/IMG_4216.jpg" alt="Me" class="about-image">
-    </div>
+    <img src="images/IMG_4216.jpg" alt="Me" class="about-image">
     <h2 class="about-title">
-      Hey, I'm <span class="highlight">Alejandro</span>, an engineering student at the University of British Columbia.</B>
+      Hey, I'm <span class="highlight">Alejandro</span>
     </h2>
+    <h1>Engineering student at the University of British Columbia</h1>
   </div>
 
   <!-- Contact Section -->
@@ -89,19 +92,19 @@
   </footer>
 
   <script>
-window.addEventListener('scroll', function() {
-  const footer = document.querySelector('footer');
-  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-    footer.style.display = 'block';
-  } else {
-    footer.style.display = 'none';
-  }
-});
+    window.addEventListener('scroll', function() {
+      const footer = document.querySelector('footer');
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        footer.style.display = 'block';
+      } else {
+        footer.style.display = 'none';
+      }
+    });
 
-// Hide footer initially
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('footer').style.display = 'none';
-});
-</script>
+    // Hide footer initially
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('footer').style.display = 'none';
+    });
+  </script>
 </body>
 </html>
