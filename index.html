@@ -55,13 +55,73 @@
     html {
       scroll-behavior: smooth;
     }
+
+    /* Navigation Styles */
+    .custom-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+
+    .custom-nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    .custom-nav a:hover {
+      text-decoration: underline;
+    }
+
+    .nav-right {
+      margin-left: auto;
+    }
+
+    .contact-btn {
+      background-color: #0077cc;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-btn:hover {
+      background-color: #005fa3;
+    }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="#About">About</a>
-    <a href="#Projects">Projects</a>
-    <a href="#Contact">Contact</a>
+  <!-- Navigation Bar -->
+  <nav class="custom-nav">
+    <div class="nav-left">
+      <span class="logo">ZJ</span>
+      <a href="#Projects">Projects</a>
+      <a href="#Extras">Extras</a>
+      <a href="#Media">Media</a>
+    </div>
+    <div class="nav-right">
+      <a href="#Contact" class="contact-btn">Contact Me</a>
+    </div>
   </nav>
 
   <!-- About Section with Image -->

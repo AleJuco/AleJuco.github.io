@@ -88,3 +88,74 @@ body {
   html {
     scroll-behavior: smooth;
   }
+  
+  /* Add to your styles.css */
+.custom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3be9b6;
+  padding: 24px 40px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.logo {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  border: 3px solid #222;
+  border-radius: 8px;
+  padding: 6px 16px;
+  margin-right: 24px;
+  background: #fff;
+}
+
+.custom-nav a {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+  position: relative;
+  padding: 4px 0;
+  transition: color 0.2s;
+}
+
+.custom-nav a:not(.contact-btn)::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #18c993;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: background 0.2s;
+}
+
+.custom-nav a:hover {
+  color: #18c993;
+}
+
+.contact-btn {
+  border: 3px solid #222;
+  border-radius: 8px;
+  padding: 8px 24px;
+  background: #fff;
+  color: #222;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.contact-btn:hover {
+  background: #18c993;
+  color: #fff;
+}
