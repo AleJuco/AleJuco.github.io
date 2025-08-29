@@ -43,14 +43,52 @@
     .two-column .text {
       flex: 1;              /* Take up remaining space */
     }
+
+    /* About Section Specific Styles */
+    .about-section {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #fff;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-image-container {
+      margin-bottom: 20px;
+    }
+
+    .about-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #0077cc;
+    }
+
+    .about-title {
+      font-size: 1.5em;
+      margin: 0;
+      color: #333;
+    }
+
+    .highlight {
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    .emoji {
+      font-size: 1.2em;
+    }
   </style>
 
 </head>
 <body>
   <nav>
-    <a href="#welcome">Home</a>
-    <a href="#about">About Me</a>
-    <a href="#contact">Contact</a>
+    <a href="#About">About</a>
+    <a href="#Projects">Projects</a>
+    <a href="#Contact">Contact</a>
   </nav>
   
   <header>
@@ -58,22 +96,23 @@
   </header> 
 
   <!--Single Column #1-->
-  <div class="single-column" id="welcome">
+  <div class="single-column" id="About">
     <h1>Welcome to My Portfolio</h1>
     <p>Hi! I'm Alejandro, a second year engineering student at the University of British Columbia. I made this page as a visual representation of my work.</p>
   </div>
   
-  <!-- Double Column #2-->
-  <div class="two-column" id="about">
-    <img src="images/IMG_4216.jpg" alt="Me">
-    <div class="text">
-      <h2>About Me</h2>
-      <p>hello</p>
+  <!-- About Section with Image -->
+  <div class="about-section" id="About">
+    <div class="about-image-container">
+      <img src="images/IMG_4216.jpg" alt="Me" class="about-image">
     </div>
+    <h2 class="about-title">
+      Hey, I'm <span class="highlight">Alejandro Imperial</span>. Here, you can check out what I'm working on. I try my best to create things with <span class="emoji">❤️</span>
+    </h2>
   </div>
 
   <!-- Contact Section -->
-  <div class="single-column" id="contact">
+  <div class="single-column" id="Contact">
     <h2>Contact Information</h2>
     <ul>
       <li>Email (Personal): imperial.alejandroj1@gmail.com</li>

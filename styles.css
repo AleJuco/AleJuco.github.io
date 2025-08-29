@@ -38,3 +38,47 @@ body {
     width: 100%;
   }
   
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px 40px 20px;
+    background: #f4f4f4;
+  }
+  
+  .about-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .about-image {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #222;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  }
+  
+  .about-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 700px;
+  }
+  
+  .highlight {
+    color: #18c993;
+    font-weight: 700;
+  }
+  
+  .emoji {
+    font-size: 2rem;
+    vertical-align: middle;
+  }
