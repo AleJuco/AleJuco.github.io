@@ -68,16 +68,13 @@ body {
     left: 0;
     bottom: -6px;
     transition: width 0.3s;
+    transition: height 0.3s;
   }
   
   /* Expand underline on hover */
   .custom-nav a:not(.contact-btn):hover::after {
     width: 100%;
-  }
-  
-  /* Change link color on hover */
-  .custom-nav a:hover {
-    color: #0077cc;
+    height: 100%;
   }
   
   /* Contact button styling */
@@ -94,7 +91,7 @@ body {
   }
   
   .contact-btn:hover {
-    background: #0077cc;
+    background: #000000;
     color: #fff;
   }
   
