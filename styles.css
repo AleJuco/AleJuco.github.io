@@ -13,8 +13,12 @@ body {
   
   nav a {
     color: rgb(0, 0, 0);
-    margin: 0 15px;
+    margin: auto;
     text-decoration: none;
+    font-size: 48px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
   main {
