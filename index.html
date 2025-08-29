@@ -87,5 +87,21 @@
   <footer>
     Alejandro Juco Imperial
   </footer>
+
+  <script>
+window.addEventListener('scroll', function() {
+  const footer = document.querySelector('footer');
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    footer.style.display = 'block';
+  } else {
+    footer.style.display = 'none';
+  }
+});
+
+// Hide footer initially
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('footer').style.display = 'none';
+});
+</script>
 </body>
 </html>
