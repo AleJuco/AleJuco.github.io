@@ -1,43 +1,110 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding-top: 70px;
-    background-color: #ffffff;
+    font-family: Arial, sans-serif; /* Default font */
+    margin: 0;                     /* Remove default margin */
+    padding-top: 90px;             /* Space for fixed nav bar */
+    background-color: #fff;        /* Page background */
   }
   
-  nav {
-    background-color: #0077cc;
-    padding: 1rem;
-    text-align: center;
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
   }
   
-  nav a {
-    color: #000;
-    margin: 0 32px;
-    text-decoration: none;
-    font-size: 1.5rem;
+  /* Navigation Bar Styles */
+  .custom-nav {
+    display: flex;                 /* Use flexbox for layout */
+    justify-content: space-between;/* Space between left/right sections */
+    align-items: center;           /* Vertically center items */
+    background: #0077cc;           /* Nav bar background color */
+    padding: 24px 40px;            /* Padding inside nav bar */
+    box-sizing: border-box;        /* Include padding in width */
+    position: fixed;               /* Fix nav bar to top */
+    top: 0;
+    left: 0;
+    width: 100vw;                  /* Full viewport width */
+    z-index: 1000;                 /* Keep nav above other content */
+  }
+  
+  /* Left side of nav: logo and links */
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;                     /* Space between logo and links */
+  }
+  
+  /* Logo styling */
+  .logo {
     font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    border: 3px solid #222;
+    border-radius: 8px;
+    padding: 6px 16px;
+    margin-right: 24px;
+    background: #fff;
   }
   
-  main {
-    padding: 2rem;
+  /* Nav links styling */
+  .custom-nav a {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    padding: 4px 0;
+    transition: color 0.2s;
   }
   
-  footer {
-    background-color: #000000;
-    color: white;
-    text-align: center;
-    padding: 1rem;
+  /* Underline effect for nav links except contact button */
+  .custom-nav a:not(.contact-btn)::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 0;                      /* Start with no underline */
+    background: #0077cc;           /* Underline color */
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.3s;
+  }
+  
+  /* Expand underline on hover */
+  .custom-nav a:not(.contact-btn):hover::after {
     width: 100%;
   }
   
+  /* Change link color on hover */
+  .custom-nav a:hover {
+    color: #0077cc;
+  }
+  
+  /* Contact button styling */
+  .contact-btn {
+    border: 3px solid #222;
+    border-radius: 8px;
+    padding: 8px 24px;
+    background: #fff;
+    color: #222;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  .contact-btn:hover {
+    background: #0077cc;
+    color: #fff;
+  }
+  
+  /* About Section Styles */
   .about-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 0 40px 0; /* Increase top padding to push content down */
+    flex-direction: column;         /* Stack children vertically */
+    align-items: center;            /* Center children horizontally */
+    justify-content: center;        /* Center children vertically */
+    padding: 80px 0 40px 0;         /* Top padding for nav bar, bottom for spacing */
     width: 100%;
     box-sizing: border-box;
     background: #f4f4f4;
@@ -46,6 +113,7 @@ body {
     border-radius: 8px;
   }
   
+  /* Profile image container for centering */
   .about-image-container {
     display: flex;
     justify-content: center;
@@ -53,107 +121,51 @@ body {
     margin-bottom: 30px;
   }
   
+  /* Profile image styling */
   .about-image {
     width: 250px;
     height: 250px;
-    border-radius: 50%;
+    border-radius: 50%;             /* Make image circular */
     object-fit: cover;
     border: 5px solid #000;
     margin-bottom: 20px;
   }
   
+  /* About title styling */
   .about-title {
     font-size: 2.5em;
     font-family: "Archivo Black", sans-serif;
-    color: #000000;
+    color: #000;
     margin: 40px 0 10px 0;
   }
   
+  /* Highlighted text in about title */
   .highlight {
     color: #0077cc;
     font-weight: bold;
   }
   
+  /* Emoji styling for about section */
   .emoji {
     font-size: 1.2em;
   }
   
+  /* Contact section styling */
   .single-column {
-    max-width: 700px;
-    margin: 40px 40px 0 ;
+    max-width: 700px;               /* Limit width for readability */
+    margin: 40px auto 0 auto;       /* Center and add top margin */
     padding: 32px 16px;
     border-radius: 8px;
     background: #fff;
   }
   
-  html {
-    scroll-behavior: smooth;
+  /* Footer styling */
+  footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
   }
-  
-  /* Add to your styles.css */
-.custom-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #0077cc;
-  padding: 24px 40px;
-  box-sizing: border-box;
-}
-
-.nav-left {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-
-.logo {
-  font-family: "Archivo Black", sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #000000;
-  border: 3px solid #222;
-  border-radius: 8px;
-  padding: 6px 16px;
-  margin-right: 24px;
-  background: #fff;
-}
-
-.custom-nav a {
-  font-family: "Archivo Black", sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #000000;
-  text-decoration: none;
-  position: relative;
-  padding: 4px 0;
-  transition: color 0.2s;
-}
-
-.custom-nav a:not(.contact-btn)::after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 100%;
-  background: #0077cc;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: background 0.2s;
-}
-
-.contact-btn {
-  border: 3px solid #222;
-  border-radius: 8px;
-  padding: 8px 24px;
-  background: #fff;
-  color: #222;
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
-}
-
-.contact-btn:hover {
-  background: #18c993;
-  color: #fff;
-}

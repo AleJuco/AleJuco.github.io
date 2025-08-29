@@ -4,9 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Page</title>
+  <!-- Google Fonts for custom font styling -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <!-- External CSS file -->
   <link rel="stylesheet" href="styles.css" />
   <style>
     /*general styling*/
@@ -106,7 +108,7 @@
     }
 
     .contact-btn:hover {
-      background-color: #005fa3;
+      background-color: #0077cc;
     }
   </style>
 </head>
@@ -115,9 +117,10 @@
   <nav class="custom-nav">
     <div class="nav-left">
       <span class="logo">AI</span>
+      <a href="#About">About</a>
+      <a href="#Skills">Skills</a>
       <a href="#Projects">Projects</a>
-      <a href="#Extras">Extras</a>
-      <a href="#Media">Media</a>
+      <a href="#Contact">Projects</a>
     </div>
     <div class="nav-right">
       <a href="#Contact" class="contact-btn">Contact Me</a>
@@ -125,16 +128,18 @@
   </nav>
 
   <!-- About Section with Image -->
-  <div class="about-section" id="About">
-    <img src="images/IMG_4216.jpg" alt="Me" class="about-image">
+  <section class="about-section" id="About">
+    <div class="about-image-container">
+      <img src="images/IMG_4216.jpg" alt="Me" class="about-image">
+    </div>
     <h2 class="about-title">
       Hey, I'm <span class="highlight">Alejandro</span>
     </h2>
-    <h1>Engineering student at the University of British Columbia</h1>
-  </div>
+    <h4>Engineering student at the University of British Columbia</h4>
+  </section>
 
   <!-- Contact Section -->
-  <div class="single-column" id="Contact">
+  <section class="single-column" id="Contact">
     <h2>Contact Information</h2>
     <ul>
       <li>Email (Personal): imperial.alejandroj1@gmail.com</li>
@@ -145,12 +150,11 @@
         </a>
       </li>
     </ul>
-  </div>
+  </section>
 
+  <!-- Footer: Name at the bottom of the page -->
   <footer>
     Alejandro Juco Imperial
   </footer>
-
-
 </body>
 </html>
