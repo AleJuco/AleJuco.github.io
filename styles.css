@@ -25,7 +25,7 @@ body {
   }
   
   footer {
-    background-color: #333;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -65,7 +65,7 @@ body {
   .about-title {
     font-size: 2.5em;
     font-family: "Archivo Black", sans-serif;
-    color: #333;
+    color: #000000;
     margin: 40px 0 10px 0;
   }
   
@@ -80,7 +80,7 @@ body {
   
   .single-column {
     max-width: 700px;
-    margin: 40px auto 0 auto;
+    margin: 40px 40px 0 ;
     padding: 32px 16px;
     border-radius: 8px;
     background: #fff;
@@ -109,7 +109,7 @@ body {
   font-family: "Archivo Black", sans-serif;
   font-size: 2rem;
   font-weight: bold;
-  color: #222;
+  color: #000000;
   border: 3px solid #222;
   border-radius: 8px;
   padding: 6px 16px;
@@ -121,7 +121,7 @@ body {
   font-family: "Archivo Black", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #222;
+  color: #000000;
   text-decoration: none;
   position: relative;
   padding: 4px 0;
