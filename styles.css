@@ -94,7 +94,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #3be9b6;
+  background: #0077cc;
   padding: 24px 40px;
 }
 
@@ -132,15 +132,11 @@ body {
   display: block;
   height: 4px;
   width: 100%;
-  background: #18c993;
+  background: #0077cc;
   position: absolute;
   left: 0;
   bottom: -6px;
   transition: background 0.2s;
-}
-
-.custom-nav a:hover {
-  color: #18c993;
 }
 
 .contact-btn {
