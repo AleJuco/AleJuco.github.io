@@ -4,22 +4,15 @@ body {
     padding: 0;
     background-color: #ffffff;
   }
-
-  header{
+  
+  nav {
     background-color: #0077cc;
-    color: white;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
   }
   
-  nav {
-    background-color: #444;
-    padding: 0.5rem;
-    text-align: start;
-  }
-  
   nav a {
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 0 15px;
     text-decoration: none;
   }
