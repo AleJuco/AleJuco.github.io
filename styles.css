@@ -132,13 +132,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px
   }
   
   /* Profile image styling */
   .about-image {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;             /* Make image circular */
     object-fit: cover;
     border: 5px solid #000;
