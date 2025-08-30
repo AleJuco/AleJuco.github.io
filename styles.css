@@ -5,6 +5,16 @@ body {
     padding-top: 80px;             /* Space for fixed nav bar */
     background-color: #fff;        /* Page background */
   }
+
+  
+* {
+  outline: 1px solid red;
+}
+
+
+  /* html, body {
+  overflow-x: hidden;
+  }
   
   /* Smooth scrolling for anchor links */
   html {
