@@ -63,7 +63,7 @@ body {
   .custom-nav a:not(.contact-btn)::after {
     content: "";
     display: block;
-    height: 4px;
+    height: 0;
     width: 0;                      /* Start with no underline */
     background: #0077cc;           /* Underline color */
     position: absolute;
@@ -82,7 +82,7 @@ body {
   
   /* Change link color on hover */
   .custom-nav a:hover {
-    color: #0077cc;
+    color: #000000;
   }
   
   /* Contact button styling */
