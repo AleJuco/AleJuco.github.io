@@ -32,9 +32,9 @@ body {
     position: fixed;               /* Fix nav bar to top */
     top: 0;
     left: 0;
-    width: 100%;                  /* Full viewport width */
+    width: 100vw;                  /* Full viewport width */
     z-index: 1000;                 /* Keep nav above other content */
-    border-bottom: 6px solid #0077cc; /* Green bar at top */
+    border-bottom: 6px solid #0077cc; 
   }
   
   /* Left side of nav: logo and links */
@@ -179,7 +179,7 @@ body {
     color: white;
     text-align: center;
     padding: 1rem;
-    width: 100%;
+    width: 100vw;
     position: relative;
     bottom: 0;
   }
