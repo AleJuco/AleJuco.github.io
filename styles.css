@@ -27,14 +27,13 @@ body {
     justify-content: space-between;/* Space between left/right sections */
     align-items: center;           /* Vertically center items */
     background: #fff;              /* Nav bar background color */
-    padding: 20px 40px;            /* Padding inside nav bar */
+    padding: 20px 250px;            /* Padding inside nav bar */
     box-sizing:border-box;        /* Include padding in width */
     position: fixed;               /* Fix nav bar to top */
     top: 0;
     left: 0;
     width: 100vw;                  /* Full viewport width */
     z-index: 1000;                 /* Keep nav above other content */
-    border-bottom: 6px solid #0077cc; 
   }
   
   /* Left side of nav: logo and links */
@@ -50,7 +49,7 @@ body {
     font-size: 2rem;
     font-weight: bold;
     color: #222;
-    border: 3px solid #222;
+    border: 5px solid #222;
     border-radius: 8px;
     padding: 6px 16px;
     background: #fff;
@@ -59,7 +58,7 @@ body {
   /* Nav links styling */
   .custom-nav a {
     font-family: "Archivo Black", sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #222;
     text-decoration: none;
@@ -142,7 +141,7 @@ body {
     height: 350px;
     border-radius: 50%;             /* Make image circular */
     object-fit: cover;
-    border: 5px solid #000;
+    border: 9px solid #000;
     margin-bottom: 20px;
   }
   
