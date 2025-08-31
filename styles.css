@@ -1,6 +1,6 @@
 /* Base body styles */
 body {
-    font-family: Arial, sans-serif; /* Default font */
+    font-family: "Archivo Black", sans-serif; /* Default font */
     margin: 0;                     /* Remove default margin */
     padding-top: 80px;             /* Space for fixed nav bar */
     background-color: #fff;        /* Page background */
@@ -104,7 +104,7 @@ body {
     flex-direction: column;         /* Stack children vertically */
     align-items: center;            /* Center children horizontally */
     justify-content: center;        /* Center children vertically */
-    padding: 60px 0 40px 0;         /* Top padding for nav bar, bottom for spacing */
+    padding: 0 0 40px 0;         /* Top padding for nav bar, bottom for spacing */
     width: 100%;
     box-sizing: border-box;
     background: #fff;
@@ -151,6 +151,14 @@ body {
     font-size: 1.2em;
   }
   
+  .skills-section {
+    text-align: center;
+    padding: 40px 0;
+    background: #f9f9f9;
+    
+  }
+
+
   /* Contact section styling */
   .single-column {
     max-width: 700px;               /* Limit width for readability */
