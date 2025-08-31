@@ -69,7 +69,7 @@ body {
   }
   
   /* Underline effect for nav links except contact button */
-  .custom-nav a:not(.contact-btn)::after {
+  .custom-nav a:not(.contact-btn, .logo)::after {
     content: "";
     display: block;
     height: 4px;
