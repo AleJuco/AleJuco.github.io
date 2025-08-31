@@ -69,7 +69,7 @@ body {
   }
   
   /* Underline effect for nav links except contact button */
-  .custom-nav a:not(.contact-btn, .logo)::after {
+  .custom-nav a:not(.contact-btn):not(.logo)::after {
     content: "";
     display: block;
     height: 4px;
@@ -84,7 +84,7 @@ body {
   }
   
   /* Expand underline on hover */
-  .custom-nav a:not(.contact-btn, .logo):hover::after {
+  .custom-nav a:not(.contact-btn):not(.logo)::after {
     width: 100%;
   }
   
