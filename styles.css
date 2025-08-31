@@ -84,7 +84,7 @@ body {
   }
   
   /* Expand underline on hover */
-  .custom-nav a:not(.contact-btn):hover::after {
+  .custom-nav a:not(.contact-btn, .logo):hover::after {
     width: 100%;
   }
   
