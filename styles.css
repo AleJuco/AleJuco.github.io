@@ -79,12 +79,11 @@ body {
     left: 0;
     bottom: -6px;
     z-index: 0;                    /* Bar sits behind the text */
-
     transition: width 0.3s;
   }
   
   /* Expand underline on hover */
-  .custom-nav a:not(.contact-btn):not(.logo)::after {
+  .custom-nav a:not(.contact-btn):not(.logo):hover::after {
     width: 100%;
   }
   
