@@ -92,6 +92,10 @@ body {
   .custom-nav a:hover {
     color: #0077cc;
   }
+
+  .logo:hover {
+    color: #0077cc;
+  }
   
   /* Contact button styling */
   .contact-btn {
