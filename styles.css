@@ -43,18 +43,6 @@ body {
     gap: 32px;                     /* Space between logo and links */
   }
   
-  /* Logo styling */
-  .logo {
-    font-family: "Archivo Black", sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #222;
-    border: 5px solid #222;
-    border-radius: 8px;
-    padding: 6px 16px;
-    background: #fff;
-  }
-  
   /* Nav links styling */
   .custom-nav a {
     font-family: "Archivo Black", sans-serif;
@@ -69,7 +57,7 @@ body {
   }
   
   /* Underline effect for nav links except contact button */
-  .custom-nav a:not(.logo)::after {
+  .custom-nav a:not(.contact-btn)::after {
     content: "";
     display: block;
     height: 4px;
@@ -83,16 +71,12 @@ body {
   }
   
   /* Expand underline on hover */
-  .custom-nav a:not(.logo):hover::after {
+  .custom-nav a:not(.contact-btn):hover::after {
     width: 100%;
   }
   
   /* Change link color on hover */
   .custom-nav a:hover {
-    color: #0077cc;
-  }
-
-  .logo:hover {
     color: #0077cc;
   }
   
