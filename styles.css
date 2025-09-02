@@ -4,6 +4,7 @@ body {
     margin: 0;                     /* Remove default margin */
     padding-top: 80px;             /* space for fixed nav bar so make sure to add additional padding on all elements as they will get pushed down */
     background-color: #ffffff; 
+    color: #1e1e31; ;
   }
 
   
@@ -163,6 +164,34 @@ body {
   .about-title {
     font-size: 2.5em;
     color: #1e1e31;
+  }
+
+  .hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 40px;                            /* Space between grid items */
+    padding: 10px 10px 10px 10px;                 /* Padding around the grid */
+  }
+
+  .hobby-card {
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.2rem;
+    transition: transform 0.8s, max-height 0.8s;
+    border: 3px solid #1e1e31;
+    border-radius: 12px;
+    padding: 20px 20px;
+    overflow: hidden;
+  }
+
+  .hobby-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .hobby-card:hover {
+    transform: translateY(-8px);
   }
 
   /* SKILLS SECTION SPECIFIC STYLING ------------------------------------------------------------------------------------------ */
