@@ -1,14 +1,15 @@
 /* Base body styles */
 body {
-    font-family: "Archivo Black", sans-serif; /* Default font */
+    font-family: "Onest", sans-serif; /* Default font */
     margin: 0;                     /* Remove default margin */
-    padding-top: 80px;             /* Space for fixed nav bar */
-    background-color: #fff;        /* Page background */
+    padding-top: 80px;             /* space for fixed nav bar so make sure to add additional padding on all elements as they will get pushed down */
+    background-color: #1e1e31; 
   }
 
   
 * {
   box-sizing: border-box;
+  scroll-padding-top : 80px;
 }
 
 
@@ -33,7 +34,9 @@ body {
     top: 0;
     left: 0;
     width: 100vw;                  /* Full viewport width */
-    z-index: 1000;                 /* Keep nav above other content */
+    z-index: 1000;   /* Keep nav above other content */
+    border-bottom: #1e1e31;  
+    border-bottom: 3px solid;            
   }
   
   /* Left side of nav: logo and links */
@@ -45,28 +48,27 @@ body {
   
   /* Nav links styling */
   .custom-nav a {
-    font-family: "Archivo Black", sans-serif;
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: bold;
-    color: #222;
+    color: #1e1e31;
     text-decoration: none;
     position: relative;
-    padding: 4px 0;
+    padding: 5px 10px 5px 10px;
     transition: color 0.2s;
     z-index: 1; /* Ensure text is above underline bar */
   }
   
-  /* Underline effect for nav links except contact button */
+  /* underline effect for nav links except contact button */
   .custom-nav a:not(.contact-btn)::after {
     content: "";
     display: block;
     height: 4px;
-    width: 0;                      /* Start with no underline */
+    width: 0;                      /* no underline start */
     background: #0077cc;           /* Underline color */
     position: absolute;
     left: 0;
     bottom: -6px;
-    z-index: 0;                    /* Bar sits behind the text */
+    z-index: 0;                    /* bar underline thing sites behind text */
     transition: width 0.3s;
   }
   
@@ -86,7 +88,6 @@ body {
     border-radius: 8px;
     padding: 8px 24px;
     background: #fff;
-    color: #222;
     font-size: 1.3rem;
     font-weight: bold;
     text-decoration: none;
@@ -104,13 +105,13 @@ body {
     flex-direction: column;         /* Stack children vertically */
     align-items: center;            /* Center children horizontally */
     justify-content: center;        /* Center children vertically */
-    padding: 0 0 40px 0;         /* Top padding for nav bar, bottom for spacing */
+    padding: 0px 0 40px 0;         /* Top padding for nav bar, bottom for spacing */
     width: 100%;
     box-sizing: border-box;
     background: #fff;
     text-align: center;
     margin-top: 0;
-    border-radius: 8px;
+    font-size: 1.3rem;
   }
   
   /* Profile image container for centering */
@@ -119,24 +120,25 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-    margin-top: 50px
+    margin-top: 80px
   }
   
   /* Profile image styling */
   .about-image {
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;             /* Make image circular */
     object-fit: cover;
-    border: 9px solid #000;
+    border: 9px solid #13131f;
     margin-bottom: 20px;
   }
+
+  
   
   /* About title styling */
   .about-title {
     font-size: 2.5em;
-    font-family: "Archivo Black", sans-serif;
-    color: #000;
+    color: #1e1e31;
     margin: 40px 350px 40px 350px;
   }
   
@@ -145,43 +147,67 @@ body {
     color: #0077cc;
     font-weight: bold;
   }
-  
-  /* Emoji styling for about section */
-  .emoji {
-    font-size: 1.2em;
-  }
-  
-  .skills-title {
-    background-color: #0077cc;
-  }
 
-  .skills-h2 {
-    color: black;
-  }
-  
   /* Skills section styling */
   .skills-section {
+    color: white;
     text-align: center;
-    list-style-type: inside;
+    list-style-position: inside;
     font-size: 2.5em;
     padding: 40px 0;
+    background: #1e1e31;
+  }
+
+  /* PROJECT SECTION SPECIFIC STYLING ---------------------------------------------------------------------*/ 
+  .projects-section {
+    text-align: left;
+    list-style-type: inside;
+    padding: 40px 250px;
     background: #ffffff;
+    color: #1e1e31;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three equal columns */
+    gap: 40px;  
+    padding: 10px 10px 10px 10px;               /* Space between grid items */
+
+  }
+
+  .project-card {
+    text-align: center;
+    font-weight: 800;
+    transition: transform 0.3s;
+    border: 3px solid #1e1e31;
+    border-radius: 12px;
+    padding: 100px 100px
     
+  }
+
+  .project-symbol1 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .project-card:hover {
+    transform: translateY(-8px);
+
   }
 
 
   /* Contact section styling */
   .single-column {
-    max-width: 700px;               /* Limit width for readability */
-    margin: 40px auto 0 auto;       /* Center and add top margin */
-    padding: 32px 16px;
-    border-radius: 8px;
+               /* Limit width for readability */
+
+
     background: #fff;
+    color:#1e1e31;
   }
   
   /* Footer styling */
   footer {
-    background-color: #000;
+    background-color: #1e1e31;
     color: white;
     text-align: center;
     padding: 1rem;
