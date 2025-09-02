@@ -212,7 +212,13 @@ body {
     height: 400px;
     border-radius: 40px;
     padding: 30px 30px;
+    opacity: 0;
+    transition: opacity 0.4s;
 
+  }
+
+  .project-card:hover .project-picture {
+    opacity: 1;
   }
 
 
