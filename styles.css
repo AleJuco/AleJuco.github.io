@@ -151,10 +151,13 @@ body {
     font-size: 1.2em;
   }
   
+  /* Skills section styling */
   .skills-section {
     text-align: center;
+    list-style-type: inside;
+    font-size: 2.5em;
     padding: 40px 0;
-    background: #f9f9f9;
+    background: #ffffff;
     
   }
 
