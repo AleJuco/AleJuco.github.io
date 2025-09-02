@@ -151,6 +151,14 @@ body {
     font-size: 1.2em;
   }
   
+  .skills-title {
+    background-color: #0077cc;
+  }
+
+  .skills-h2 {
+    color: black;
+  }
+  
   /* Skills section styling */
   .skills-section {
     text-align: center;
