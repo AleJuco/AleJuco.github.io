@@ -2,7 +2,7 @@
 body {
     font-family: "Onest", sans-serif; /* Default font */
     margin: 0;                     /* Remove default margin */
-    padding-top: 80px;             /* space for fixed nav bar so make sure to add additional padding on all elements as they will get pushed down */
+    padding-top: 5vw;             /* space for fixed nav bar so make sure to add additional padding on all elements as they will get pushed down */
     background-color: #ffffff; 
     color: #1e1e31; ;
   }
@@ -10,7 +10,7 @@ body {
   
 * {
   box-sizing: border-box;
-  scroll-padding-top : 80px;
+  scroll-padding-top : 10vw;
 }
 
 
@@ -29,7 +29,7 @@ body {
     justify-content: space-between;/* Space between left/right sections */
     align-items: center;           /* Vertically center items */
     background: #fff;              /* Nav bar background color */
-    padding: 20px 700px;            /* Padding inside nav bar */
+    padding: 1vw 30vw;            /* Padding inside nav bar */
     box-sizing:border-box;        /* Include padding in width */
     position: fixed;               /* Fix nav bar to top */
     top: 0;
@@ -37,15 +37,9 @@ body {
     width: 100vw;                  /* Full viewport width */
     z-index: 1000;   /* Keep nav above other content */
     border-bottom: #1e1e31;  
-    border-bottom: 3px solid;            
+    border-bottom: 0.2vw solid;            
   }
   
-  /* Left side of nav: logo and links */
-  .nav-left {
-    display: flex;
-    align-items: center;
-    gap: 32px;                     /* Space between logo and links */
-  }
   
   /* Nav links styling */
   .custom-nav a {
@@ -54,7 +48,7 @@ body {
     color: #1e1e31;
     text-decoration: none;
     position: relative;
-    padding: 5px 5px;
+    padding: 0;
     transition: color 0.2s;
     z-index: 1; /* Ensure text is above underline bar */
   }
@@ -63,12 +57,12 @@ body {
   .custom-nav a:after {
     content: "";
     display: block;
-    height: 4px;
+    height: 0.2vw;
     width: 0;                      /* no underline start */
     background: #0077cc;           /* Underline color */
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -0.2vw;          /* position underline below text */
     z-index: 0;                    /* bar underline thing sites behind text */
     transition: width 0.3s;
   }
