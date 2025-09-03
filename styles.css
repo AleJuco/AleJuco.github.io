@@ -11,6 +11,7 @@ body {
 * {
   box-sizing: border-box;
   scroll-padding-top : 10vw;
+  outline: orangered 1px solid;
 }
 
 
