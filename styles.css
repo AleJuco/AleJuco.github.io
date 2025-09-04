@@ -44,7 +44,7 @@ body {
   
   /* Nav links styling */
   .custom-nav a {
-    font-size: 1.4rem;
+    font-size: 2vw;
     font-weight: bold;
     color: #1e1e31;
     text-decoration: none;
@@ -84,13 +84,13 @@ body {
     flex-direction: column;         /* Stack children vertically */
     align-items: center;            /* Center children horizontally */
     justify-content: center;        /* Center children vertically */
-    padding: 0 0 0 0;         /* Top padding for nav bar, bottom for spacing */
+    padding: 0 0 3vw 0;         /* Top padding for nav bar, bottom for spacing */
     width: 100%;
     box-sizing: border-box;
     background: #fff;
     text-align: center;
     margin-top: 0;
-    font-size: 1.3rem;
+    font-size: 4vw;
   }
   
   /* Profile image container for centering */
@@ -115,9 +115,9 @@ body {
 
   /* top title styling */
   .top-title {
-    font-size: 2rem;
+    font-size: 3vw;
     color: #1e1e31;
-    margin: 2vw 2vw 1vw 2vw;
+    margin: 2vw 3vw 1vw 3vw;
     padding: 2vw 2vw 2vw 2vw;
   }
   
@@ -131,18 +131,18 @@ body {
   .about-section {
     text-align: left;
     background-color: #ffffff;
-    padding: auto;
-    margin: 10vw;
+    padding: 1vw 0.2vw;
+    margin: 0vw 10vw;
   }
 
   .about-text {
-    font-size: 2rem;
+    font-size: 2vw;
     color: #1e1e31;
     line-height: 1.6;
   }
 
   .about-title {
-    font-size: 2.5em;
+    font-size: 2.7vw;
     color: #1e1e31;
   }
 
@@ -156,7 +156,7 @@ body {
   .hobby-card {
     text-align: center;
     font-weight: 800;
-    font-size: 2.2rem;
+    font-size: 2vw;
     transition: transform 0.8s, max-height 0.8s;
     border: 3px solid #1e1e31;
     border-radius: 12px;
@@ -179,9 +179,27 @@ body {
     color: white;
     text-align: center;
     list-style-position: inside;
-    font-size: 2.5em;
-    padding: 40px 0;
+    font-size: 2.7vw;
+    padding: 2vw 2vw;
     background: #1e1e31;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 40px;                            /* Space between grid items */
+    padding: 10px 10px 10px 10px;                 /* Padding around the grid */
+  }
+
+  .skill-card {
+    text-align: center;
+    font-weight: 800;
+    font-size: 2vw;
+    transition: transform 0.8s, max-height 0.8s;
+    border: 3px solid #ffffff;
+    border-radius: 12px;
+    padding: 20px 20px;
+    overflow: hidden;
   }
 
   /* PROJECT SECTION SPECIFIC STYLING ---------------------------------------------------------------------*/ 
@@ -191,7 +209,7 @@ body {
     padding: 40px 250px;
     background: #ffffff;
     color: #1e1e31;
-    font-size: 2.2rem;
+    font-size: 2.7vw;
   }
 
   .projects-grid {
@@ -203,6 +221,7 @@ body {
   }
 
   .project-card {
+    font-size: 2vw;
     text-align: center;
     font-weight: 800;
     transition: transform 0.8s, max-height 0.8s;
@@ -219,7 +238,7 @@ body {
     height: 100px;
   }
 
-  .project-card:hover {
+  .project-card. {
     transform: translateY(-8px);
     max-height: 1000px;
   }
