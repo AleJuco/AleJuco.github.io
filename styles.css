@@ -2,7 +2,7 @@
 body {
     font-family: "Onest", sans-serif; /* Default font */
     margin: 0;                     /* Remove default margin */
-    padding-top: 4vw;             /* space for fixed nav bar so make sure to add additional padding on all elements as they will get pushed down */
+    padding-top: 5vw;             /* space for fixed nav bar so make sure to add additional padding on all elements as they will get pushed down */
     background-color: #ffffff; 
     color: #1e1e31; ;
   }
@@ -10,8 +10,9 @@ body {
   
 * {
   box-sizing: border-box;
-  scroll-padding-top : 10vw;
-  outline: orangered 1px solid;
+  scroll-padding-top : 4.5vw;
+  scroll-behavior: smooth;
+
 }
 
 
@@ -20,10 +21,6 @@ body {
   }
   
   /* Smooth scrolling for anchor links */
-  html {
-    scroll-behavior: smooth;
-  }
-  
   /* Navigation Bar Styles */
   .custom-nav {
     display: flex;                 /* Use flexbox for layout */
@@ -177,10 +174,10 @@ body {
   /* SKILLS SECTION SPECIFIC STYLING ------------------------------------------------------------------------------------------ */
   .skills-section {
     color: white;
-    text-align: center;
+    text-align: left;
     list-style-position: inside;
     font-size: 2.7vw;
-    padding: 2vw 2vw;
+    padding: 0.1vw 10vw 5vw 10vw;
     background: #1e1e31;
   }
 
@@ -188,7 +185,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three equal columns */
     gap: 2vw;                            /* Space between grid items */
-    padding: 1vw;                 /* Padding around the grid */
+    padding: 1vw 1vw 1vw 1vw;                 /* Padding around the grid */
   }
 
   .skill-card {
@@ -196,51 +193,56 @@ body {
     font-weight: 800;
     font-size: 2vw;
     transition: transform 0.8s, max-height 0.8s;
-    border: 3px solid #ffffff;
-    border-radius: 12px;
-    padding: 20px 20px;
+    border: 0.2vw solid #ffffff;
+    border-radius: 1vw;
+    padding: 1vw 1vw;
     overflow: hidden;
+  }
+
+  .skill-card:hover{
+    transform: translateY(-8px);
   }
 
   /* PROJECT SECTION SPECIFIC STYLING ---------------------------------------------------------------------*/ 
   .projects-section {
     text-align: left;
     list-style-type: inside;
-    padding: 40px 250px;
+    padding: 1vw 10vw;
     background: #ffffff;
     color: #1e1e31;
     font-size: 2.7vw;
+    margin: 2vw
   }
 
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Three equal columns */
-    gap: 40px;  
-    padding: 10px 10px 10px 10px;               /* Space between grid items */
+    gap: 2vw;  
+    padding: 5vw 5vw 5vw 5vw;               /* Space between grid items */
 
   }
 
   .project-card {
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-align: center;
     font-weight: 800;
     transition: transform 0.8s, max-height 0.8s;
-    border: 3px solid #1e1e31;
-    border-radius: 12px;
-    padding: 30px 30px;
+    border: 0.2vw solid #1e1e31;
+    border-radius: 1vw;
+    padding: 1.4vw 2vw;
     overflow: hidden;
-    max-height: 200px;
+    max-height: 14vw;
     
   }
 
   .project-symbol {
-    width: 100px;
-    height: 100px;
+    width: 7vw;
+    height: 7vw;
   }
 
-  .project-card. {
-    transform: translateY(-8px);
-    max-height: 1000px;
+  .project-card:hover {
+    transform: translateY(-0.8vw);
+    max-height: 60vw;
   }
 
   .project-description {
@@ -272,9 +274,9 @@ body {
   .contacts-section {
     background: #fff;
     color:#1e1e31;
-    padding: 40px 250px;
+    padding: 10vw 20vw;
     text-align: left;
-    font-size: 2.2rem;
+    font-size: 2.5vw;
   }
   
   /* Footer styling */
@@ -282,7 +284,7 @@ body {
     background-color: #1e1e31;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 4vw;
     width: 100%;
     position: relative;
     bottom: 0;
