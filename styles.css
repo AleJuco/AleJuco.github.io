@@ -59,8 +59,8 @@ body {
     width: 0;                      /* no underline start */
     background: #0077cc;           /* Underline color */
     position: absolute;
-    left: 0;
-    bottom: -0.2vw;          /* position underline below text */
+    left: 1vw;
+    bottom: 1vw;          /* position underline below text */
     z-index: 0;                    /* bar underline thing sites behind text */
     transition: width 0.3s;
   }
@@ -197,12 +197,21 @@ body {
     border-radius: 1vw;
     padding: 1vw 1vw;
     overflow: hidden;
+    max-height: 6.4vw;
   }
 
   .skill-card:hover{
     transform: translateY(-8px);
+    max-height: 15vw;
   }
 
+  .skill-description{
+    opacity: 0;
+  }
+
+  .skill-card:hover .project-description{
+    opacity: 1;
+  }
   /* PROJECT SECTION SPECIFIC STYLING ---------------------------------------------------------------------*/ 
   .projects-section {
     text-align: left;
