@@ -147,7 +147,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three equal columns */
     gap: 5vw;                            /* Space between grid items */
-    padding: 0.2vw;                 /* Padding around the grid */
+    padding: 2vw 0 2vw 0;                 /* Padding around the grid */
   }
 
   .hobby-card {
@@ -168,7 +168,7 @@ body {
   }
 
   .hobby-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-0.8vw);
   }
 
   /* SKILLS SECTION SPECIFIC STYLING ------------------------------------------------------------------------------------------ */
@@ -201,15 +201,17 @@ body {
   }
 
   .skill-card:hover{
-    transform: translateY(-8px);
+    transform: translateY(-0.8vw);
     max-height: 15vw;
   }
 
   .skill-description{
+    padding-top: 1vw;
     opacity: 0;
+    font-size: 1vw;
   }
 
-  .skill-card:hover .project-description{
+  .skill-card:hover .skill-description{
     opacity: 1;
   }
   /* PROJECT SECTION SPECIFIC STYLING ---------------------------------------------------------------------*/ 
