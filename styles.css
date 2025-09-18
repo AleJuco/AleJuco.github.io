@@ -101,8 +101,8 @@ body {
   
   /* Profile image styling */
   .top-image {
-    width: 30vw;
-    height: 30vw;
+    width: 25vw;
+    height: 25vw;
     border-radius: 50%;             /* Make image circular */
     object-fit: cover;
     border: 0.2vw solid #13131f;
